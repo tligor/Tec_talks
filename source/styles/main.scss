@@ -1,5 +1,9 @@
 @use 'reset';
 @use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+@use 'variables';
 
 .container{
     max-width: 960px;
@@ -12,8 +16,4 @@
     @media (max-width: 1024px){
         max-width: 90%;
     }
-}
-
-body{
-    background-color: green;
 }
