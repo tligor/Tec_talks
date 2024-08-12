@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Ebac Tech Talks</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <div class="container">
             <img class="hero__container__logo" src="./assets/ebac_logo.svg" alt="Ebac">
             <p class="hero__container__content">
-                O maior evento de tecnologia do Brasil começa em  10d 10h 10m 10s
+                O maior evento de tecnologia do Brasil começa em: <br> <span id="contador"></span>
             </p>
             <div class="infos_bar">
                 <ul class="infos_bar__infos">
@@ -28,7 +29,7 @@
                     </li>
                     <li class="infos_bar__infos__item">
                         <b>Quando</b>
-                        12/12/2022 Ás 19hrs
+                        06/09/2029 Ás 19hrs
                     </li>
                 </ul>
                 <a href="#" class="button button--primary">
@@ -38,7 +39,7 @@
         </div>
     </header>
     <section class="event event--frontend">
-        <div class="container">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Front-end</h2>
                 <p class="event__details__description">
@@ -49,7 +50,7 @@
         </div>
     </section>
     <section class="event event--ux-ui event--image-left">
-        <div class="container">
+        <div class="container" data-aos="fade-left">
             <div class="event__details">
                 <h2 class="event__details__title">Ui/UX</h2>
                 <p class="event__details__description">
@@ -60,7 +61,7 @@
         </div>
     </section>
     <section class="event event--data-science">
-        <div class="container">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Data Science</h2>
                 <p class="event__details__description">
@@ -71,7 +72,7 @@
         </div>
     </section>
     <section class="event event--backend event--image-left">
-        <div class="container">
+        <div class="container" data-aos="fade-left">
             <div class="event__details">
                 <h2 class="event__details__title">Back-end</h2>
                 <p class="event__details__description">
@@ -81,6 +82,7 @@
             <img class="event__image" src="./assets/frontend.png" alt="Front-end">
         </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
