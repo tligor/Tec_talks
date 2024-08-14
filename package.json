@@ -1,10 +1,9 @@
 {
   "name": "exercicio_modulo22",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "build": "parcel build source/index.html",
     "dev": "parcel source/index.html source/styles/main.scss source/script/main.js --no-cache",
+    "build": "parcel build source/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
