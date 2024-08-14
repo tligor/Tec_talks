@@ -5,84 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Ebac Tech Talks</title>
+    <title>Convite de aniversário</title>
 </head>
 <body>
-    <header class="hero">
+    <div class="container">
+        <header class="header">
+            <img src="./assets/logo.png" alt="Header Logo">
+            <ul class="header__menu">
+                <li>
+                    <a href="#" class="--active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Conheça</a>
+                </li>
+                <li>
+                    <a href="#">Vantagens</a>
+                </li>
+                <li>
+                    <a href="#">Recursos</a>
+                </li>
+            </ul>
+            <ul class="header__login">
+                <li class="header__login__item">
+                    <button>Reserve seu ingresso</button>
+                </li>
+                <li class="header__login__item">
+                    <button>Login</button>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <section class="createown">
+        <div class="createown__content">
+            <h2>Venha se divertir nesse dia especial!</h2>
+        <p>
+            Fique ligado! A data é <span>06/09/2029</span>
+        </p>
+        <span id="contador"></span>
+        </div>
+    </section>
+    <section class="easytodo">
         <div class="container">
-            <img class="hero__container__logo" src="./assets/ebac_logo.svg" alt="Ebac">
-            <p class="hero__container__content">
-                O maior evento de tecnologia do Brasil começa em: <br> <span id="contador"></span>
+            <div class="easytodo__content">
+                <h2>
+                    Montar seu site de Aniversário é fácil, rapido e muito intuitivo!
+                </h2>
+                <p>Em poucos cliques, você já terá seu site personalizado e exclusivo!</p>
+                <button>
+                    Criar site grátis
+                </button>
+            </div>
+            <picture>
+                <img src="./assets/pc-icon.png" alt="Logo da tela de um computador">
+            </picture>
+        </div>
+    </section>
+    <section class="history">
+        <div class="container">
+            <h3>
+                Há 8 anos a melhor lista de presentes online com a tecnologia mais inovadora.
+
+            </h3>
+            <p>
+                No Meu Site de Aniversário o atendimento de qualidade é levado a sério. A satisfação de nossos clientes é nossa prioridade. Somos a única empresa do mercado a oferecer suporte telefônico de verdade sem cobrar nada a mais por isso.
             </p>
-            <div class="infos_bar">
-                <ul class="infos_bar__infos">
-                    <li class="infos_bar__infos__item">
-                        <b>Localização</b>
-                        Alianz Parque - Barra Funda - São Paulo
+        </div>
+    </section>
+    <section class="advantages">
+        <h1>Vantagens</h1>
+        <div class="container">
+            <div class="advantages__item">
+                <ul>
+                    <li>
+                        <p>Crie sua conta grátis</p>
+                        <img src="./assets/_createyourown_1.jpg" alt="">
                     </li>
-                    <li class="infos_bar__infos__item">
-                        <b>Preço</b>
-                        A partir de R$ 120,00.
+                    <li>
+                        <p>Escolha layouts e monte quantos sites você quiser</p>
+                        <img src="./assets/_createyourown_2.jpg" alt="">
                     </li>
-                    <li class="infos_bar__infos__item">
-                        <b>Quando</b>
-                        06/09/2029 Ás 19hrs
+                    <li>
+                        <p>Receba seus presentes em dinheiro</p>
+                        <img src="./assets/_createyourown_3.jpg" alt="">
                     </li>
                 </ul>
-                <a href="#" class="button button--primary">
-                    Garanta sua vaga
-                </a>
-            </div>
-        </div>
-    </header>
-    <section class="event event--frontend">
-        <div class="container" data-aos="fade-right">
-            <div class="event__details">
-                <h2 class="event__details__title">Front-end</h2>
-                <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod nihil non dignissimos, iure asperiores sit amet eos
-                </p>
-            </div>
-            <img class="event__image" src="./assets/frontend.png" alt="Front-end">
         </div>
     </section>
-    <section class="event event--ux-ui event--image-left">
-        <div class="container" data-aos="fade-left">
-            <div class="event__details">
-                <h2 class="event__details__title">Ui/UX</h2>
-                <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod nihil non dignissimos, iure asperiores sit amet eos.
-                </p>
-            </div>
-            <img class="event__image" src="./assets/ui-ux.png" alt="UI/UX">
-        </div>
-    </section>
-    <section class="event event--data-science">
-        <div class="container" data-aos="fade-right">
-            <div class="event__details">
-                <h2 class="event__details__title">Data Science</h2>
-                <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod nihil non dignissimos, iure asperiores
-                </p>
-            </div>
-            <img class="event__image" src="./assets/data.png" alt="Data Science">
-        </div>
-    </section>
-    <section class="event event--backend event--image-left">
-        <div class="container" data-aos="fade-left">
-            <div class="event__details">
-                <h2 class="event__details__title">Back-end</h2>
-                <p class="event__details__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod nihil non dignissimos, iure asperiores
-                </p>
-            </div>
-            <img class="event__image" src="./assets/backend.png" alt="Back-end">
-        </div>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./scripts/main.js"></script>
+
+
+    <script src="./script/main.js"></script>
 </body>
 </html>

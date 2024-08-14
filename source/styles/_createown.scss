@@ -1,0 +1,49 @@
+@use 'variaveis';
+
+.createown{
+    background-image: url(../assets/banner-aniversario.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 226px;
+    width: 100%;
+    position: relative;
+    border-bottom: 20px solid variaveis.$btnCreate;
+    &__content{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 1px;
+        color: variaveis.$secTextColor;
+
+        h2{
+            font-size: 3.2em;
+            text-align: center;
+        }
+        p{
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: 600;
+            color: variaveis.$terTextColor;
+
+            span{
+                color: variaveis.$secTextColor;
+                font-weight: bold;
+            }
+        }
+    }
+    #contador{
+        position: absolute;
+        left: 40vw;
+        font-weight: bold;
+        font-size: 25px;
+        padding: 20px;
+    }
+    @media (min-width: 768px){
+        background-image: url(../assets/banner-aniversario.png);
+        background-size: cover;
+    }
+}

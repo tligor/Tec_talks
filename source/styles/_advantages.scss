@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+.advantages{
+    padding: 3% 0 5% 0;
+    height: 370px;
+    h1{
+        text-align: center;
+        color: variaveis.$advantageColor;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 100%;
+
+        ul{
+            display:flex;
+            justify-content: space-between;
+            padding: 20px;
+            li{
+                display: flex;
+                flex-direction: column;
+                list-style:decimal;
+                p{
+                    text-align: center;
+                    font-size: 17px;
+                    text-wrap: wrap;
+                    width: 330px;
+                }
+                img{
+                    height: 240px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

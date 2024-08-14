@@ -1,19 +1,27 @@
+@use 'header';
 @use 'reset';
-@use 'hero';
-@use 'components/infos_bar';
-@use 'components/buttons';
-@use 'event';
-@use 'variables';
+@use 'variaveis';
+@use 'createown';
+@use 'easytodo';
+@use 'history';
+@use 'advantages';
+
 
 .container{
-    max-width: 960px;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
+    padding: 0 15px;
+    @media (min-width: 768px){
+        width: 750px;
+    }
+    @media (min-width: 992px){
+        width: 970px;
+    }
+    @media (min-width: 1200px){
+        width: 1170px;
+    }
+    @media (min-width: 1920px){
+        width: 1890px;
+    }
 
-    @media (max-width: 640px){
-        max-width: 80%;
-    }
-    @media (max-width: 1024px){
-        max-width: 90%;
-    }
 }

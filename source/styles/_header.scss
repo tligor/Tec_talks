@@ -1,0 +1,55 @@
+@use 'variaveis';
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+
+    img{
+        height: 106px;
+        
+    }
+    &__menu{
+        display: flex;
+        list-style: none;
+        height: 100%;
+        align-items: center;
+        padding-left: 2%;
+        a{
+            padding: 10px 35px;
+            color: variaveis.$textColor;
+            text-decoration: none;
+        }
+
+    }
+    &__login{
+        display: flex;
+        
+        &__item{
+            margin-top: 2%;
+            padding: 30px 10px;
+            display: flex;
+            &:first-child{
+                button{
+                    background-color: variaveis.$btnCreate;
+                    color: variaveis.$secTextColor;
+                    width: 135px;
+                    height: auto;
+                }
+            }
+            button{
+                font-weight: bold;
+                border: none;
+                color: variaveis.$btnCreate;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .--active{
+        border-bottom: 3px solid variaveis.$btnCreate;
+    }
+
+    
+}

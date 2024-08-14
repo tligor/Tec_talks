@@ -1,18 +1,16 @@
 {
-  "name": "landingpage-evento",
+  "name": "exercicio_modulo22",
   "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "parcel source/index.html source/styles/main.scss source/scripts/main.js --no-cache",
-    "build": "parcel build source/index.html",
+    "dev": "parcel source/index.html source/styles/main.scss source/script/main.js --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "tligor",
+  "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0",
-    "sharp": "^0.31.3"
+    "parcel": "^2.12.0"
   }
 }

@@ -1,0 +1,22 @@
+@use 'variaveis';
+
+.history{
+    height: 100%;
+    background-color: variaveis.$secBgColor;
+    padding: 3% 0 5% 0;
+
+    .container{
+        width: 1140px;
+    }
+    h3{
+        font-size: 1.7em;
+        color: variaveis.$secTextColor;
+        text-align: center;
+        margin: 20px 0 10px;
+    }p{
+        font-size: 1em;
+        color: variaveis.$secTextColor;
+        text-align: center;
+    }
+
+}
